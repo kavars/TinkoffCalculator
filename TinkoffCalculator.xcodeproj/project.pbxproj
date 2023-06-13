@@ -16,6 +16,7 @@
 		7ECEAE4B2A3200BA00E4F751 /* TinkoffCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECEAE4A2A3200BA00E4F751 /* TinkoffCalculatorTests.swift */; };
 		7ECEAE552A3200BA00E4F751 /* TinkoffCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECEAE542A3200BA00E4F751 /* TinkoffCalculatorUITests.swift */; };
 		7ECEAE572A3200BA00E4F751 /* TinkoffCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECEAE562A3200BA00E4F751 /* TinkoffCalculatorUITestsLaunchTests.swift */; };
+		7ECEAE642A38819900E4F751 /* CalculationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECEAE632A38819900E4F751 /* CalculationListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7ECEAE502A3200BA00E4F751 /* TinkoffCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinkoffCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECEAE542A3200BA00E4F751 /* TinkoffCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkoffCalculatorUITests.swift; sourceTree = "<group>"; };
 		7ECEAE562A3200BA00E4F751 /* TinkoffCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkoffCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7ECEAE632A38819900E4F751 /* CalculationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				7ECEAE3C2A3200B900E4F751 /* Assets.xcassets */,
 				7ECEAE3E2A3200B900E4F751 /* LaunchScreen.storyboard */,
 				7ECEAE412A3200B900E4F751 /* Info.plist */,
+				7ECEAE632A38819900E4F751 /* CalculationListViewController.swift */,
 			);
 			path = TinkoffCalculator;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ECEAE642A38819900E4F751 /* CalculationListViewController.swift in Sources */,
 				7ECEAE382A3200B700E4F751 /* ViewController.swift in Sources */,
 				7ECEAE342A3200B700E4F751 /* AppDelegate.swift in Sources */,
 				7ECEAE362A3200B700E4F751 /* SceneDelegate.swift in Sources */,

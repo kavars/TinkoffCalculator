@@ -84,6 +84,24 @@ class ViewController: UIViewController {
         calculationHistory.removeAll()
     }
 
+    @IBAction func unwindAction(unwindSegue: UIStoryboardSegue) {}
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard
+            segue.identifier == "CALCULATION_LIST",
+            let calculationsListVC = segue.destination as? CalculationListViewController
+        else {
+            return
+        }
+
+        calculationsListVC.result = label.text
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+
     func calculate() throws -> Double {
         guard
             case .number(let firstNumber) = calculationHistory[0]
