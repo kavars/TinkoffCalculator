@@ -331,7 +331,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="BN9-Iv-j1W" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="901.52671755725191" y="3.5211267605633805"/>
         </scene>
@@ -343,41 +342,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGk-DY-99u">
-                                <rect key="frame" x="196.66666666666666" y="426" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92H-OE-BXa">
-                                <rect key="frame" x="151" y="489.33333333333331" width="91" height="34.999999999999943"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Закрыть"/>
-                                <connections>
-                                    <segue destination="BN9-Iv-j1W" kind="unwind" unwindAction="unwindActionWithUnwindSegue:" id="Lc9-HW-iCz"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результат:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4J-Dj-HZc">
-                                <rect key="frame" x="154.66666666666666" y="346.33333333333331" width="83.666666666666657" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5QO-c8-PjW">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eyz-ks-S16"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
-                            <constraint firstItem="92H-OE-BXa" firstAttribute="centerX" secondItem="Ha0-7a-QkU" secondAttribute="centerX" id="JS6-OK-t2u"/>
-                            <constraint firstItem="92H-OE-BXa" firstAttribute="top" secondItem="sGk-DY-99u" secondAttribute="bottom" constant="63.333333333333314" id="QML-Gt-Vga"/>
-                            <constraint firstItem="S4J-Dj-HZc" firstAttribute="centerX" secondItem="Ha0-7a-QkU" secondAttribute="centerX" id="dEb-Iz-da7"/>
-                            <constraint firstItem="sGk-DY-99u" firstAttribute="top" secondItem="S4J-Dj-HZc" secondAttribute="bottom" constant="58.666666666666686" id="tj9-cG-ame"/>
-                            <constraint firstItem="sGk-DY-99u" firstAttribute="centerY" secondItem="Ha0-7a-QkU" secondAttribute="centerY" id="tzh-kh-rme"/>
-                            <constraint firstItem="sGk-DY-99u" firstAttribute="centerX" secondItem="Ha0-7a-QkU" secondAttribute="centerX" id="yWg-1m-GD4"/>
+                            <constraint firstItem="eyz-ks-S16" firstAttribute="trailing" secondItem="5QO-c8-PjW" secondAttribute="trailing" id="c6v-PP-i4Y"/>
+                            <constraint firstItem="5QO-c8-PjW" firstAttribute="top" secondItem="eyz-ks-S16" secondAttribute="top" id="jXb-SB-AUa"/>
+                            <constraint firstItem="5QO-c8-PjW" firstAttribute="leading" secondItem="eyz-ks-S16" secondAttribute="leading" id="ypA-Wt-Uqj"/>
+                            <constraint firstItem="eyz-ks-S16" firstAttribute="bottom" secondItem="5QO-c8-PjW" secondAttribute="bottom" id="zYs-QZ-LYl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="История" id="c0D-Mh-UZn"/>
                     <connections>
-                        <outlet property="calculationLabel" destination="sGk-DY-99u" id="GSX-vZ-a72"/>
+                        <outlet property="tableView" destination="5QO-c8-PjW" id="W24-w6-MY0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNR-7Z-GHv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

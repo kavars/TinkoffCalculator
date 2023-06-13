@@ -41,6 +41,8 @@ enum CalculationHistoryItem {
 
 class ViewController: UIViewController {
 
+    var calculations: [(expression: [CalculationHistoryItem], result: Double)] = []
+
     @IBOutlet weak var label: UILabel!
 
     @IBAction func buttonPressed(_ sender: UIButton) {
@@ -77,6 +79,7 @@ class ViewController: UIViewController {
         do {
             let result = try calculate()
             label.text = numberFormatter.string(from: NSNumber(value: result))
+            calculations.append((calculationHistory, result))
         } catch {
             label.text = "Ошибка"
         }
@@ -94,7 +97,7 @@ class ViewController: UIViewController {
             return
         }
 
-        calculationsListVC.result = label.text
+        calculationsListVC.calculations = calculations
     }
 
     override func viewWillAppear(_ animated: Bool) {
