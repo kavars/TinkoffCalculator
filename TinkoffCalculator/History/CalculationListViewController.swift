@@ -9,7 +9,7 @@ import UIKit
 
 final class CalculationListViewController: UIViewController {
 
-    var calculations: [(expression: [CalculationHistoryItem], result: Double)] = []
+    var calculations: [Calculation] = []
 
     @IBOutlet weak var tableView: UITableView!
     
